@@ -15,6 +15,12 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_SMS" />
 
+    <permission android:name="com.android.gallery3d.filtershow.permission.READ">
+    <provider android:name="com.android.gallery3d.filtershow.provider.SharedImageProvider"
+              android:authorities="com.android.gallery3d.filtershow.provider.SharedImageProvider"
+              android:grantUriPermissions="true"
+              android:readPermission="com.android.gallery3d.filtershow.permission.READ"/>
+
     <application android:icon="@drawable/ic_launcher_camera"
             android:label="@string/camera_label"
             android:taskAffinity="">
